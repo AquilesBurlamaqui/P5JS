@@ -80,19 +80,33 @@ Podemos também, brincar com a aparência dessas formas. No seu script, digite o
 ``` javascript
 function setup() {
 	createCanvas(640, 480);
-	background(0);
+	background(0,0,0);
 }
 
 function draw() {
+  //cabeca
+  //preenchimento branco
+  fill(255, 255, 255);
+  //cor da linha AZUL (R(0), G(0), B(255))
+  stroke(0, 0, 255);
+  //desenha retangulo
+  rect(100, 50, 400, 350);
+  
+  //olhos
   noFill();
   stroke(0, 0, 255);
   ellipse(200, 100, 120, 60);
+  ellipse(400, 100, 120, 60);
+
+  //nariz
   noStroke();
   fill(255, 0, 0);
-  rect(200, 200, 80, 80);
+  rect(260, 200, 80, 80);
+  
+  //boca
   stroke(60, 150, 60);
-  strokeWeight(3);
-  line(100, 300, 400, 400);
+  strokeWeight(5);
+  line(200, 300, 400, 350);
 }
 ```
 Resultado da execução:
