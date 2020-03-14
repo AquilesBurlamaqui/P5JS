@@ -27,7 +27,6 @@ Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag
 </body>
 </html>
 ```
-![Elipse](imagens/p1.png)
 
 ### Passo 1.1
 A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (scriptjogo.js).
@@ -37,7 +36,7 @@ A opção acima depende da internet para funcionar, pois o código do p5js esta 
 <html>
 <head>
   <meta charset="UTF-8">
-  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="js/p5.js"></script>
   <script language="javascript" type="text/javascript" src="scriptjogo.js"></script>
 
 </head>
@@ -59,23 +58,11 @@ function setup() {
  }
 ```
 
-## Passo 2: Criando uma arquivo de código JavaScript 
 
-Abra o editor de sua preferência e digite o seguinte:
-``` javascript
-function setup() {
-
-}
-
-function draw() {
-  ellipse(50, 50, 80, 80);
-}
-```
-Salve este arquivo como *Jogo.js* (mesmo nomo usado dentro do arquivo HTML). 
 
 O resultado da execução do arquivo index.html será: 
 
-![Elipse](imagens/elipse.png)
+![Elipse](imagens/p1.png)
 
 Para mais informações veja: 
 
@@ -83,7 +70,7 @@ Para mais informações veja:
 
 Um exemplo de código funcionando com processing web (p5.js) pode ser baixado em: https://github.com/orivaldosantana/ECT2203LoP/blob/master/lab0/lab_processing_intro.zip 
 
-## Passo 3: Desenhando formas geométricas 
+## Passo 2: Desenhando formas geométricas 
 
 O processing tem diversas funções para desenho de formas, tais como `ellipse()`, `rect()`, `line()`, `point()`, `quad()`, `triangle()`... Todas elas precisam de informações como posição e tamanho, que são colocadas dentro dos parênteses.
 
