@@ -68,7 +68,7 @@ Para mais informações veja:
 
 * https://p5js.org/reference/#/p5/ellipse 
 
-Um exemplo de código funcionando com processing web (p5.js) pode ser baixado em: https://github.com/orivaldosantana/ECT2203LoP/blob/master/lab0/lab_processing_intro.zip 
+Um exemplo de código funcionando com processing web (p5.js) pode ser baixado em: https://github.com/aquilesburlamaqui/P5JS/blob/master/jogoP5js.zip 
 
 ## Passo 2: Desenhando formas geométricas 
 
