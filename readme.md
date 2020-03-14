@@ -456,8 +456,7 @@ function draw() {
 ```
 
 Saída: 
-
-![Elipse](codigos/figuras/figura8.png)
+![Elipse](imagens/p8.png)
 
 
 Adicionando uma musica ao seu código:
