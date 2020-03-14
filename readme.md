@@ -2,7 +2,7 @@
 
 ## Passo 1: Criando um arquivo html 
 
-Para criar seu jogo usando o P5JS, você precisará de uma página HTML com a tag <script src=""> apontando para o código da biblioteca p5js. Copie o código abaixo e salve como jogo.html. Depois abra em seu navegador preferido. 
+Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag <script src=""> apontando para o código da biblioteca p5js. Copie o código abaixo e salve como jogo.html. Depois abra em seu navegador preferido. 
 	
 ``` html
 <html>
