@@ -27,7 +27,7 @@ Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag
 </body>
 </html>
 ```
-
+![Elipse](p1.png)
 
 ### Passo 1.1
 A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (scriptjogo.js).
