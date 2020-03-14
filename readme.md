@@ -426,7 +426,7 @@ function draw() {
 
 Saída: 
 
-![Elipse](imagens/p6.png)
+![Elipse](imagens/p7.png)
 
 Outra função bastante utilizada é a dist(x1, y1, x2, y2), que retorna a distancia entre duas posições informadas. Podemos utiliza-la de diversas formas, veremos um exemplo aqui.
 
