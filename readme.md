@@ -2,8 +2,32 @@
 
 ## Passo 1: Criando um arquivo html 
 
-Primeiro, você irá precisar de uma página HTML simples, como a mostrada abaixo:
+Primeiro, você irá precisar de uma página HTML com a tag <script src=""> apontando para o código da biblioteca p5js. Copie o código abaixo
+e salve como jogo.html. Depois abra em seu navegador preferido. 
+	
+``` html
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="https://github.com/processing/p5.js/releases/download/0.5.16/p5.js"></script>
+  <script>
+     //seu código p5js vai aqui:
+     function setup() {
+     }
 
+     function draw() {
+        ellipse(50, 50, 80, 80);
+     }
+  </script>
+</head>
+<body>
+    
+</body>
+</html>
+```
+A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo, a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (Jogo.js).
+
+Uma alternativa a escrever o código do jogo dentro do código html seria usar 
 ``` html
 <html>
 <head>
@@ -18,28 +42,6 @@ Primeiro, você irá precisar de uma página HTML simples, como a mostrada abaix
 </body>
 </html>
 ```
-Ela servirá como meio de acesso ao seu arquivo de script, salve-a como "index.html".
-
-Alternativa:
-
-``` html
-<html>
-<head>
-  <meta charset="UTF-8">
-  <script language="javascript" type="text/javascript" src="https://github.com/processing/p5.js/releases/download/0.5.16/p5.js"></script> //mudança
-  <script language="javascript" type="text/javascript" src="Jogo.js"></script>
-
-  <style> body {padding: 0; margin: 0;} </style>
-</head>
-
-<body>
-</body>
-</html>
-```
-
-Neste exemplo, a biblioteca p5.js foi substituída por um link que contem seu diretório na web, isso permite que execumentos qualquer código sem ter a biblioteca baixada.
-
-
 
 ## Passo 2: Criando uma arquivo de código JavaScript 
 
