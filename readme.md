@@ -145,7 +145,8 @@ Como vimos, função createCanvas() define o tamanho da tela e o background() de
  * https://p5js.org/reference/#/p5/noStroke
  * https://p5js.org/reference/#/p5/createCanvas
   
-Agora vejamos algo mais interessante...
+  
+## Passo 3: Utlizando a posição do MOUSE - acesso as variáveis globais mouseY e mouseX,
 
 Primeiro teremos que saber o que são as funções setup() e draw(), que viemos utilizando aqui. Elas são usadas basicamente para organizar o fluxo do código. O setup(), é executado apenas uma vez, no começo, para declarações iniciais. Já o draw(), ficará se repetindo no decorrer da execução, nele poderemos fazer algo mudar seu valor ao longo do tempo. Um exemplo é a posição da ellipse, que pode ser alterada de acordo com a posiço do mouse!
 
@@ -177,6 +178,8 @@ Veja:
 * https://p5js.org/reference/#/p5/mouseX
 * https://p5js.org/reference/#/p5/mouseY
 
+## Passo 4: Detectando se o mouse foi pressionado
+
 Agora vamos implementar um pouco esse código.
 
 ``` javascript
@@ -200,6 +203,8 @@ Veja:
 
 * https://p5js.org/reference/#/p5/mouseIsPressed
 
+## Passo 5: Utilizando a função random para gerar números aleatórios
+
 A função random(min, max) também pode ser muito útil para diversas aplicações.
 	
 ``` javascript
@@ -221,6 +226,9 @@ function draw() {
 Veja:
 
 * https://p5js.org/reference/#/p5/random
+
+
+## Passo 6: Criando novas varáveis globais - pré-tiro 
 
 Também podemos criar nossas próprias variáveis.
 
@@ -247,6 +255,7 @@ function draw() {
 
 Aqui, criamos as variáveis antes das funções, para que elas possam ser usadas em todos os lugares do código. No setup(), damos valores iniciais, visto que o setup só é executado uma única vez. No draw(), verificamos se a posição X do círculo está dentro do nosso canvas, se está verdadeiro, a variável da posição X é incrementada fazendo com que o círculo ande pela tela na horizontal, se ele sai do canvas, a posição X volta para zero (0) e o ciclo recomeça. O background está sendo repintado no draw() para evitar que o círculo deixe um rastro na tela; primeiro é pintado um fundo, depois o círculo é pintado em uma posição X, depois o fundo é pintado novamente e só então um novo círculo é pintado, em uma nova posição X. Experimente retirar a função background e veja o que acontece.
 
+## Passo 7 : Controlando uma elipse com as setas do teclado 
 ```javascript
 var x = 100;
 var y = 100;
@@ -278,6 +287,8 @@ Veja:
 
 * https://p5js.org/reference/#/p5/keyIsDown.
 
+## Passo 8 : Random + Mouse pressionado
+
 Vejamos agora mais algumas aplicações da função random().
 ```javascript
 var yo, xo;
@@ -302,6 +313,7 @@ function draw() {
 
 Neste código, a função foi utilizada para definir uma posição aleatória para um retangulo, dentro do nosso canvas, sempre que o botão do mouse for pressionado. Observe que passamos apenas um valor como parâmetro, tal valor é interpretado como o valor máximo e o número escolhido estará na faixa [0, max]. Poderiamos também definir a posição do retangulo para fora do canvas, e faze-lo aparecer utilizando o sistema de movimentação que já vimos antes.
 
+## Passo 9 : Random quando sair da tela
 ```javascript
 var yo, xo;
 
@@ -329,6 +341,8 @@ Note que após o retangulo sair da área do nosso canvas, devemos definir as pos
 Veja:
 
 * https://p5js.org/reference/#/p5/random
+
+## Passo 10 : Variáveis de estado
 
 Introduziremos agora o conceito de *variáveis de estado*. Utilizar variáveis de estado é muito útil para quando precisamos que algo aconteça no programa somente quando alguma outra ação estiver sendo realizada. Por exemplo, você só poderá fazer provas de C2 enquanto a *variável* "cursando C2" estiver ativada, uma vez que essa variável seja desligada você não poderá mais fazer provas de C2 a não ser que "cursando C2" seja ligada novamente ('-'). Para criar uma variável de estado utilizamos as variáveis boleanas, pois estas possuem dois estados, *true* e *false*, que são usados para representar *ligado* e *desligado*.
 
@@ -364,6 +378,7 @@ function draw() {
 
 Aqui, a variável boleana naTela funciona como variável de estado, pois observe que enquanto o retângulo permanecer dentro da área do canvas, naTela é verdadeira e o retângulo anda para a direita, uma vez que este saia da tela, naTela vira falso e o retângulo volta para o começo da tela. Em resumo, podemos ler que o retângulo andará quando naTela for verdadeiro e voltará para o começo da tela quando naTela for falso. Vejamos outro exemplo.
 
+## Passo 11 : Variável de estado para implementar algo como um pré-tiro
 ```javascript
 var yo, xo;
 var podeMudar = true;
@@ -395,6 +410,8 @@ function draw() {
 ```
 
 Aqui a variável de estado é podeMudar. O programa funciona da seguinte forma: quando o mouse é clicado, uma posição é definida para o retângulo que logo então começará a andar para a direita, uma vez em movimento, o clique do mouse não conseguirá mais mudar sua posição até que ele saia da área do canvas. Assim, quando o retângulo estiver fora de vista, podeMudar é verdadeira e a posição poderá ser alterada com um clique do mouse, mas uma vez em movimento, até que o retângulo saia de vista novamente, podeMudar será falsa e o clique do mouse não funcionará. 
+
+## Passo 12 :Escrevendo textos na tela
 
 Em alguns casos, precisaremos escrever algo na nossa tela, podemos fazer isso usando a função text(), desse modo:
 
@@ -428,6 +445,8 @@ Saída:
 
 ![Elipse](imagens/p7.png)
 
+## Passo 13 :Calculando a distância entre dois pontos
+
 Outra função bastante utilizada é a dist(x1, y1, x2, y2), que retorna a distancia entre duas posições informadas. Podemos utiliza-la de diversas formas, veremos um exemplo aqui.
 
 ``` javascript
@@ -459,8 +478,7 @@ Saída:
 ![Elipse](imagens/p8.png)
 
 
-Adicionando uma musica ao seu código:
-
+## Passo 14 :Adicionando uma musica ao seu código
 
 ```  html
 
