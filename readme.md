@@ -39,7 +39,6 @@ Uma alternativa a escrever o código do jogo dentro do código html seria usar
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
   <script language="javascript" type="text/javascript" src="Jogo.js"></script>
 
-  <style> body {padding: 0; margin: 0;} </style>
 </head>
 
 <body>
