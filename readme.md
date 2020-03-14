@@ -93,9 +93,10 @@ Um exemplo de código funcionando com processing web (p5.js) pode ser baixado em
 
 O processing tem diversas funções para desenho de formas, tais como `ellipse()`, `rect()`, `line()`, `point()`, `quad()`, `triangle()`... Todas elas precisam de informações como posição e tamanho, que são colocadas dentro dos parênteses.
 
-Salve o arquivo com o nome "scriptjogo.js" e abra o index no navegador.
+Já que você aprendeu como criar um arquivo html e colocar o script do p5js para funcionar nesse arquivo, vamos agora tentar fazer o mesmo utilizando o editor do próprio sie do p5js:  https://editor.p5js.org/
+Ele é uma maneira mais prática de testar e ate mesmo, caso vc crie uma conta na plataforma deles, de criar e publicar seu jogo.
+Abram o link https://editor.p5js.org/ e coloquem o seguinte código:
 
-Podemos também, brincar com a aparência dessas formas. No seu script, digite o seguinte:
 ``` javascript
 function setup() {
 	createCanvas(640, 480);
