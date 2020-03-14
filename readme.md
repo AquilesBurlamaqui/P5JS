@@ -169,13 +169,13 @@ Resultado da execução:
 
 ![Elipse](imagens/p3.png)
 
-.... <!-- post content -->
+``` <!-- post content -->
 
 <div class="iframe_container">
   <iframe src="https://editor.p5js.org/aquiles/sketches/7cdy5olk" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
 </div>
 
-.... <!-- post content -->
+```` <!-- post content -->
 
 
 
