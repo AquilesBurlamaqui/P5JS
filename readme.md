@@ -37,7 +37,7 @@ Uma alternativa a escrever o código do jogo dentro do código html seria usar
 <head>
   <meta charset="UTF-8">
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-  <script language="javascript" type="text/javascript" src="Jogo.js"></script>
+  <script language="javascript" type="text/javascript" src="jogo.js"></script>
 
 </head>
 
