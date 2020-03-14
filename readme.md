@@ -169,16 +169,6 @@ Resultado da execução:
 
 ![Elipse](imagens/p3.png)
 
-``` <!-- post content -->
-
-<div class="iframe_container">
-  <iframe src="https://editor.p5js.org/aquiles/sketches/7cdy5olk" frameborder="0" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
-```` <!-- post content -->
-
-
-
 Os parâmetros mouseY e mouseX, funcionam como variáveis que armazenam os valores da posição do mouse.
 
 Veja:
