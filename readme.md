@@ -192,8 +192,7 @@ function draw() {
 }
 
 ```
-
-![Elipse](codigos/figuras/figura4.png)
+![Elipse](imagens/p4.png)
 
 A variável mouseIsPressed é uma boleana, nela é armazenado true para o caso de o botão do mouse estar sendo pressionado e false para o caso do botão estar solto.
 
