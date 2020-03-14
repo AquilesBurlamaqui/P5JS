@@ -322,7 +322,6 @@ function draw() {
    }
   
    rect(xo,yo,40,40);
-   ellipse(x, y, 50, 50);
 }
 ```
 Note que após o retangulo sair da área do nosso canvas, devemos definir as posições novamente, para que ele volte a aparecer no começo da tela.
