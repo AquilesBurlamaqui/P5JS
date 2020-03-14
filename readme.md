@@ -13,8 +13,8 @@ Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag
   <script>
      //seu código p5js vai aqui:
      function setup() {
-	createCanvas(640, 480);
-	background(0);
+      	createCanvas(640, 480);
+      	background(0);
      }
 
      function draw() {
