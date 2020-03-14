@@ -46,7 +46,7 @@ Uma alternativa a escrever o código do jogo dentro do código html seria usar
 </html>
 ```
 
-### jogo.html
+### jogo.js
 ``` javascript
 function setup() {
 	createCanvas(640, 480);
