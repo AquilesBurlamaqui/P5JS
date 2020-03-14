@@ -216,7 +216,7 @@ function draw() {
 
 ```
 
-![Elipse](codigos/figuras/figura3.png)
+![Elipse](imagens/p5.png)
 
 Veja:
 
