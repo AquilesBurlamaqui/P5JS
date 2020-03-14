@@ -30,7 +30,7 @@ Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag
 
 
 ### Passo 1.1
-A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (Jogo.js).
+A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (scriptjogo.js).
 
 #### jogo.html
 ``` html
@@ -38,7 +38,7 @@ A opção acima depende da internet para funcionar, pois o código do p5js esta 
 <head>
   <meta charset="UTF-8">
   <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-  <script language="javascript" type="text/javascript" src="jogo.js"></script>
+  <script language="javascript" type="text/javascript" src="scriptjogo.js"></script>
 
 </head>
 
@@ -47,7 +47,7 @@ A opção acima depende da internet para funcionar, pois o código do p5js esta 
 </html>
 ```
 
-#### jogo.js
+#### scriptjogo.js
 ``` javascript
 function setup() {
 	createCanvas(640, 480);
