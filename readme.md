@@ -75,7 +75,7 @@ Salve este arquivo como *Jogo.js* (mesmo nomo usado dentro do arquivo HTML).
 
 O resultado da execução do arquivo index.html será: 
 
-![Elipse](codigos/figuras/elipse.png)
+![Elipse](imagens/elipse.png)
 
 Para mais informações veja: 
 
