@@ -32,6 +32,10 @@ No caso do código acima, temos a 2 funções principais do p5js, a function set
 A setup() só é executada uma única vez, e serve para configurar parâmetros, variáveis, etc.
 A draw() é utilizada para redesenhar a tela diversas vezes, em um loop, como se fosse um while(true) ou laço infinito.  Permitindo com isso a criação de animacoes. 
 
+createCanvas uma área de desenho de 640 pixels de largura por 480 pixels de altura
+```javascript
+createCanvas(640, 480);
+```
 
 uma elipse é desenhada na tela. 
 Para isso, temos que informar as coordenadas e o tamanho da elipse usando *ellipse([coordenada x],[coordenada y], [largura], [altura])*. 
