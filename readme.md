@@ -28,6 +28,14 @@ Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag
 </html>
 ```
 
+No caso do código acima, temos a 2 funções principais do p5js, a function setup() e function draw().  
+A setup() só é executada uma única vez, e serve para configurar parâmetros, variáveis, etc.
+A draw() é utilizada para redesenhar a tela diversas vezes, em um loop, como se fosse um while(true) ou laço infinito.  Permitindo com isso a criação de animacoes. 
+
+
+uma elipse é desenhada na tela. 
+Para isso, temos que informar as coordenadas e o tamanho da elipse usando *ellipse([coordenada x],[coordenada y], [largura], [altura])*. 
+
 ### Passo 1.1 (Alternativo)
 A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (scriptjogo.js).
 
@@ -70,11 +78,11 @@ Para mais informações veja:
 
 Um exemplo de código funcionando com processing web (p5.js) pode ser baixado em: https://github.com/AquilesBurlamaqui/P5JS/raw/master/jogoP5js.zip
 
-## Passo 2: Desenhando formas geométricas 
+## Passo 2: Desenhando formas geométricas e usando o editor do p5js 
 
 O processing tem diversas funções para desenho de formas, tais como `ellipse()`, `rect()`, `line()`, `point()`, `quad()`, `triangle()`... Todas elas precisam de informações como posição e tamanho, que são colocadas dentro dos parênteses.
 
-No caso do código acima, uma elipse é desenhada na tela. Para isso, temos que informar as coordenadas e o tamanho da elipse usando *ellipse([coordenada x],[coordenada y], [largura], [altura])*. Salve o arquivo com o nome "Jogo.js" e abra o index no navegador.
+Salve o arquivo com o nome "scriptjogo.js" e abra o index no navegador.
 
 Podemos também, brincar com a aparência dessas formas. No seu script, digite o seguinte:
 ``` javascript
