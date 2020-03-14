@@ -14,7 +14,7 @@ Para criar seu jogo usando o P5JS você precisará de uma página HTML com a tag
      //seu código p5js vai aqui:
      function setup() {
       	createCanvas(640, 480);
-      	background(0);
+      	background(0,0,0);
      }
 
      function draw() {
@@ -37,8 +37,15 @@ createCanvas uma área de desenho de 640 pixels de largura por 480 pixels de alt
 createCanvas(640, 480);
 ```
 
+background pinta a tela de fundo(background) de preto. Essa funcao recebe as cores no formato R, G, B(Red, Green Blue). Como todas as cores estão com zero a cor é preta. Para conseguir um background azul bastaria colocar background(0,0,255); 255 no B, blue(azul).
+```javascript
+background(0,0,0);
+```
 uma elipse é desenhada na tela. 
 Para isso, temos que informar as coordenadas e o tamanho da elipse usando *ellipse([coordenada x],[coordenada y], [largura], [altura])*. 
+```javascript
+ ellipse(50, 50, 80, 80);
+```
 
 ### Passo 1.1 (Alternativo)
 A opção acima depende da internet para funcionar, pois o código do p5js esta apontando para um link na web. Alternativamente, você pode optar por baixar o código do p5js (p5.js) em seu diretório local e apontar para ele, deixando seu código autocontido. Veja o exemplo a seguir e note que aproveitamos e colocamos o script do nosso jogo tambem em um arquivo separado (scriptjogo.js).
