@@ -524,7 +524,70 @@ também podemos importar uma musica da web utilizando endereço URL da musica, p
 </body>
 </html>
 ```
+## PAsso 15 - Menu utilizando setas
 
+``` javascript
+var x = 80;
+var y = 100;
+
+var tela = 0;
+var opcao = 1;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  if(tela==0) 
+    menu();
+  if(tela==1)
+    fase1();
+  if(tela==2)
+    instrucoes();
+  if(tela==3)
+    creditos();
+}
+
+function menu() {
+  rect(x, y, 200, 45);
+  
+  textSize(32);
+  text('ECT GAME', 120, 50);
+  text('Jogar', 90, 130);
+  text('Instruções', 90, 230);
+  text('Créditos', 90, 330);
+}
+
+function fase1() {
+  textSize(32);
+  text('FASE 1',10, 50);
+}
+
+function instrucoes() {
+  textSize(32);
+  text('Instruções',10, 50);
+}
+
+function creditos() {
+  textSize(32);
+  text('Creditos',10, 50);
+}
+
+function keyPressed() {
+  if (key === 'ArrowUp' && y>100) {
+    y-=100;
+    opcao--;
+  } else if (key === 'ArrowDown' && y<300) {
+   y+=100;
+    opcao++;
+  } else if (key === 'Enter') {
+   tela=opcao;
+  } else if (key === 'Escape') {
+   tela=0;
+  }
+}
+```
 
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
