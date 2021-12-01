@@ -588,8 +588,102 @@ function keyPressed() {
   }
 }
 ```
+					   
+## PAsso 16 - Menu utilizando o Mouse
+
+``` javascript	
+//tela
+//  0  menu
+//  1 jogar
+//  2 creditos
+var tela=0;
+
+var score = 0;
+
+var pX=0;
+var pY=100;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  
+  if(tela==0) {
+    textSize(25);
+    textAlign(CENTER);
+    text("MENU", 200,30);
+
+    rect(135, 200, 125, 45, 10);
+    text("JOGAR", 200,230);
+
+    rect(130, 275, 140, 45, 10);
+    text("CREDITOS", 200,305);
+  }
+  
+  if(tela==1) {
+    textSize(25);
+    textAlign(CENTER);
+    text("JOGAR", 200,30);
+    ellipse(pX,pY, 40,40);
+    pX=pX+5;
+    if(pX>400) {
+      pX=0;
+    }
+    //botao voltar
+    textSize(16);
+    rect(330, 10, 25, 25, 10);
+    text("Voltar", 375,25);
+    
+    text("Score:"+score, 30,50);
+  }
+  
+  if(tela==2) {
+    textSize(25);
+    textAlign(CENTER);
+    text("CREDITOS", 200,30); 
+  }
+ 
+  textSize(12);
+  text(mouseX+" "+mouseY, 30,30);
+  text("tela "+tela, 30,40);
+ 
+}
+
+function mousePressed() {
+  if(tela==0) {
+    if(mouseX>135 && mouseX<260 && mouseY>200 && mouseY<245) {
+      console.log("Clicou em Jogar!!!");
+      tela=1;
+    }else if(mouseX>130 && mouseX<270 && mouseY>275 && mouseY<320) {
+      console.log("Clicou em Creditos!!!");
+      tela=2;
+    }
+  }
+  
+  if(tela==1) {
+     if(mouseX>330 && mouseX<355 && mouseY>10 && mouseY<35) {
+        console.log("Clicou em voltar!!!");
+        tela=0;
+     }  
+  }
+}
+
+function keyPressed() {
+   if(keyCode==27) {
+     tela=0;
+   }
+}
+```							    
+					   
+					   
+					   
 
 Por enquanto, pode parecer que não fizemos algo muito interessante, mas essa é só uma base para que você possa criar coisas incríveis. Para isso, basta praticar os conceitos aqui mostrados e juntar-los ao que vocè aprender em suas pesquisas futuras. Um ótimo lugar para expandir seu conhecimento sobre esse assunto é o próprio site do Processing. Divirta-se!
 
+					   
+					   
+					   
 Saiba mais em: 
 * https://p5js.org/
